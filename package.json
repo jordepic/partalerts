@@ -1,5 +1,5 @@
 {
-  "homepage": "http://jordepic.github.io/partalerts",
+  "homepage": "https://jordepic.github.io/partalerts/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -29,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "react-scripts build",
+    "predeploy": "npm build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
