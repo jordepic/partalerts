@@ -32,7 +32,7 @@ const App = (props: any) => {
           <Layout className={styles.Layout}>
             <Header/>
             <Layout.Content className={styles.Content}>
-              <Route exact path='/partalerts' component={HomePage} />
+              <Route exact path='/' component={HomePage} />
               <Route exact path='/send-reset-email' component={SendResetEmail} />
               <Route exact path='/change-password' component={ResetPassword} />
               <PrivateRoute exact path='/parts' component={PartPage} />
@@ -46,7 +46,7 @@ const App = (props: any) => {
 }
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/partalerts">
     <App />
   </BrowserRouter>,
   document.getElementById('root')
