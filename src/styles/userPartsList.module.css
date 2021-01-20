@@ -1,0 +1,23 @@
+.Input {
+    background-color: #141414 !important;
+    color: white !important;
+    border-bottom: 2px solid #1890ff !important;
+    margin-bottom: 16px !important;
+}
+
+.ListItem {
+    color: white !important;
+}
+
+.Pagination * {
+    background-color: #141414 !important;
+    color: white !important;
+}
+
+.Pagination {
+    margin-bottom: 24px !important;
+}
+
+.List {
+    margin-bottom: 24px !important;
+}

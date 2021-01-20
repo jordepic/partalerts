@@ -1,0 +1,24 @@
+.Logo {
+    color: white;
+    float: left;
+}
+
+.Header {
+    background-color:  #1890ff!important;
+}
+
+.Menu {
+    float: right;
+    background-color: #1890ff !important;
+    padding-right: 16px;
+    padding-left: 16px;
+    z-index: 2;
+}
+
+.Menu > * {
+    color: white;
+}
+
+.Menu > * :hover {
+    color: black;
+}
