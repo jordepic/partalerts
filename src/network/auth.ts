@@ -4,7 +4,7 @@ let url = process.env.REACT_APP_BACKEND_URL as string;
 
 export const logInEmailPassword = async (email: string, password: string, remember: boolean) => {
     try {
-        let res = await axios.post(`${url}/login/email`, {email, password, remember}, {withCredentials: true}) as any;
+        let res = await axios.post(`${url}/login/email`, {email, password, remember}, {withCredentials: true, crossDomain: true} as any) as any;
         console.log(res);
         return res.data.token;
     }
@@ -15,7 +15,7 @@ export const logInEmailPassword = async (email: string, password: string, rememb
 
 export const logInToken = async () => {
     try {
-        let res = await axios.get(`${url}/login/token`, {withCredentials: true}) as any;
+        let res = await axios.get(`${url}/login/token`, {withCredentials: true, crossDomain: true} as any) as any;
         return res.data.token;
     }
     catch(e) {
