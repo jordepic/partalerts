@@ -46,7 +46,7 @@ const App = (props: any) => {
 }
 
 ReactDOM.render(
-  <BrowserRouter basename="/partalerts">
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
